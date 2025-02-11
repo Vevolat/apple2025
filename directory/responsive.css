@@ -1,0 +1,103 @@
+@media (max-width: 1022px) {
+
+   /* Navbar Styles */
+
+    nav {
+        height: 6.5vh;
+    }
+
+    .navicon {
+        display: block;
+    }
+
+    .respnavbar {
+        display: block;
+    }
+
+    .responsivediv {
+        display: flex;
+        position: absolute;
+        top: 25%;
+        right: 3%;
+    }
+
+    .navlinks {
+        display: block;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    /* The info box below the Navbar */
+
+    .infobartext {
+        flex-direction: column;
+    }
+
+    .mainpage1 {
+        background-image: url("https://www.apple.com.cn/v/home/ca/images/heroes/lny-2025/hero_lny25_gifting__fypofecxk4qe_large_2x.png");
+        height: 515px;
+    }
+
+    .mp1-title1 {
+        font-size: 32px;
+    }
+
+    .mp1-title2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .mainpagelink {
+        font-size: 16px;
+    }
+
+    /* Main page - 2 -> iPhone 14 */
+
+    .mainpage2 {
+        background-image: url("https://www.apple.com.cn/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg");
+        height: 550px;
+    }
+
+    /* Main page - 3 -> Apple watch */
+
+    .mainpage3 {
+        background-image: url("https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_small_2x.jpg");
+        height: 545px;
+    }
+
+    /* Main page - 4 -> grid items */
+
+    .grid-item {
+        flex-basis: 100%;
+        margin: 0px;
+    }
+
+    .promo1 {
+        background-image: url("https://www.apple.com.cn/v/home/ca/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_small_2x.jpg");
+        height: 490px;
+    }
+
+    .promo2 {
+        background-image: url("https://www.apple.com.cn/v/home/ca/images/promos/apple-watch-unity/promo_apple_watch_unity__casvx9ysh1le_large_2x.jpg");
+    }
+
+    .promo3 {
+        background-image: url("https://www.apple.com.cn/home/promos/ipad-pro/images/promo_ipadpro__ch217v9v7no2_small_2x.jpg");
+        height: 590px;
+    }
+
+    .promo4 {
+        background-image: url("https://www.apple.com.cn/home/promos/macbook-air/images/promo_macbook_air_m3__e43jegok3wuq_small_2x.jpg");
+        height: 500px;
+    }
+    .promo5 {
+        background-image: url("https://www.apple.com.cn/home/promos/cny-2025-film-bts/images/promo_cny_soip_2025__fd1yfjullxm6_small_2x.jpg");
+        height: 500px;
+    }
+
+    .promo6 {
+        background-image: url("https://www.apple.com.cn/home/promos/airpods-pro/images/promo_airpods_pro__cpg72b2fcfde_small_2x.jpg");
+    }
+}

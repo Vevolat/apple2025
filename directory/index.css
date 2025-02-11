@@ -1,0 +1,436 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+/* HTML Page */
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica", "Arial";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 133, 226);
+}
+
+/* Navbar Styles */
+
+nav {
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.navicon {
+    margin-left: 25px;
+}
+
+.navlink {
+    margin-inline: 15px;
+    color: #000000;
+}
+
+.responsivediv {
+    display: flex;
+}
+
+.respnavbar {
+    display: none;
+}
+
+.applelogo {
+    margin-inline: 25px;
+    margin-top: -2.9px;
+}
+
+/* The info box below the Navbar */
+
+.infobartext {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+
+}
+
+.infobar {
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main page - 1 -> iPhone 14 Pro */
+
+.mainpage1 {
+    background-image: url("https://www.apple.com.cn/v/home/ca/images/heroes/lny-2025/hero_lny25_gifting__fypofecxk4qe_large_2x.png");
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+}
+
+.mp1-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.mp1-title1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.mp1-title2 {
+    font-size: 25px;
+}
+
+.mainpagelink {
+    font-size: 16px;
+}
+.link1 {
+    font-size: 18px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: none; /* 无轮廓 */
+    background-color: rgb(15, 114, 243); /* 背景颜色为蓝色 */
+    color: white; /* 字体颜色为白色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: background-color 0.3s ease; /* 添加背景颜色过渡动画 */
+}
+.link2 {
+    font-size: 18px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: 2px solid rgb(15, 114, 243); /* 蓝色边框 */
+    background-color: transparent; /* 无背景颜色 */
+    color: rgb(15, 114, 243); /* 字体颜色为蓝色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: border-color 0.3s ease, color 0.3s ease; /* 添加边框颜色和字体颜色的过渡动画 */
+}
+.link3 {
+    font-size: 18px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: none; /* 无轮廓 */
+    background-color: rgb(255, 255, 255); /* 背景颜色为蓝色 */
+    color: rgb(0, 0, 0); /* 字体颜色为白色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: background-color 0.3s ease; /* 添加背景颜色过渡动画 */
+}
+.link4 {
+    font-size: 18px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: 2px solid rgb(255, 255, 255); /* 蓝色边框 */
+    background-color: transparent; /* 无背景颜色 */
+    color: rgb(255, 255, 255); /* 字体颜色为蓝色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: border-color 0.3s ease, color 0.3s ease; /* 添加边框颜色和字体颜色的过渡动画 */
+}
+.link5 {
+    font-size: 14px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: 2px solid rgb(255, 255, 255); /* 蓝色边框 */
+    background-color: rgb(255, 255, 255); /* 无背景颜色 */
+    color: rgb(0, 0, 0); /* 字体颜色为蓝色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: border-color 0.3s ease, color 0.3s ease; /* 添加边框颜色和字体颜色的过渡动画 */
+}
+.link6 {
+    font-size: 14px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: none; /* 无轮廓 */
+    background-color: rgb(15, 114, 243); /* 背景颜色为蓝色 */
+    color: white; /* 字体颜色为白色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: background-color 0.3s ease; /* 添加背景颜色过渡动画 */
+}
+.link7 {
+    font-size: 14px; /* 字体大小 */
+    border-radius: 20px; /* 圆角边框 */
+    border: 2px solid rgb(15, 114, 243);; /* 蓝色边框 */
+    background-color: transparent; /* 无背景颜色 */
+    color: rgb(15, 114, 243);; /* 字体颜色为蓝色 */
+    padding: 5px 10px; /* 添加内边距 */
+    text-decoration: none; /* 去掉超链接默认的下划线 */
+    cursor: pointer; /* 鼠标悬停时显示为指针样式 */
+    transition: border-color 0.3s ease, color 0.3s ease; /* 添加边框颜色和字体颜色的过渡动画 */
+}
+/* Main page - 2 -> iPhone 14 */
+
+.mainpage2 {
+    background-image: url("https://www.apple.com.cn/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg");
+    height: 788px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.mp-default-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+.mp-default-text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    line-height: 77px;
+}
+.mp2-title1 {
+    margin-top: 590px;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.mp2-desc {
+    font-size: 23px;
+}
+
+.mainpagelink {
+    font-size: 20px;
+}
+
+/* Main page - 3 -> Apple watch */
+
+.mainpage3 {
+    background-image: url("https://www.apple.com.cn/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_small_2x.jpg");
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.mp3desc {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Main page - 4 -> grid items */
+
+.mainpage4 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex-basis: 49%;
+    margin: 5px;
+}
+
+.applewatchlogo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    line-height: 12px;
+    font-size: 50px;
+}
+
+.applewatchcontainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 40px;
+}
+
+.airpodsaa{
+    margin-top: 10px;
+}
+
+.suphead{
+    color: #ff00b5;
+    font-size: 20px;
+}
+
+.motherday {
+    margin-top: 300px;
+    font-size: 35px;
+    font-weight: bold;
+    width: 350px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.motherday2 {
+    margin-top: 10px;
+    width: 250px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.promo1 {
+    background-image: url("https://www.apple.com.cn/v/home/ca/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_small_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+.watchacc{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.promo2 {
+    background-image: url("https://www.apple.com.cn/v/home/ca/images/promos/apple-watch-unity/promo_apple_watch_unity__casvx9ysh1le_large_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.promo3 {
+    background-image: url("https://www.apple.com.cn/home/promos/ipad-pro/images/promo_ipadpro__ch217v9v7no2_small_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.promo4 {
+    background-image: url("https://www.apple.com.cn/home/promos/macbook-air/images/promo_macbook_air_m3__e43jegok3wuq_small_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.promo5 {
+    background-image: url("https://www.apple.com.cn/home/promos/cny-2025-film-bts/images/promo_cny_soip_2025__fd1yfjullxm6_small_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.promo6 {
+    background-image: url("https://www.apple.com.cn/home/promos/airpods-pro/images/promo_airpods_pro__cpg72b2fcfde_small_2x.jpg");
+    background-position-x: center;
+    height: 588px;
+    background-position: center;
+    background-size: cover; /* 使背景图片完整显示并适应容器 */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#ipadtitle {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#mactitle {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+#macdescription {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+}
+
+.appletradein {
+    margin-top: 50px;
+}
+
+.wwdc23 {
+    margin-top: 40px;
+}
+
+.wwdc23text {
+    color: white;
+}
+
+/* Footer  */
+
+footer {
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footertext1 {
+    margin: 25px;
+    width: 820px;
+    font-size: 13px;
+    color: rgb(71, 71, 71);
+}
+.footer {
+    width: 100%;
+
+    color: #000000;
+    text-align: left;
+
+    bottom: 0;
+    left: 0;
+}
+.divider {
+    border: 1px solid #ccc; /* 分割线样式，灰色边框 */
+    margin-top: 20px; /* 与上面内容的间距 */
+    margin-bottom: 20px; /* 与下面内容的间距 */
+}
