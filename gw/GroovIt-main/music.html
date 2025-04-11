@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <script src="./js/669bcf34d7.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onscroll="scroll()">
+
+    <header>
+
+        <div class="sidebar_logo">
+            <i class="fas fa-music "></i>
+            <h3>音乐<h3>
+        </div>
+
+        <div class="sidebar_menu">
+            <div class="search">
+                <i class="fas fa-search" style="margin-right: .4rem; color: #FFF;"></i>
+                <input type="search" name="" id="" placeholder="搜索">
+            </div>
+
+            <div class="menu_text">
+                <a href="index.html" class="a"> <i class="far fa-play-circle"></i> 立刻收听</a>
+                <a href="buscador.html" class="a"> <i class="fas fa-cubes"></i> 探索</a>
+                <a href="" class="a"> <i class="fas fa-microphone-alt"></i> 博客</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social_field">
+                <a href="https://github.com/Vevolat?tab=repositories"><i class="fab fa-github"
+                        style="color: #FFF;"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile_menu">
+        <div class="mobile_logo">
+            <i class="fas fa-music "></i>
+            <h3>Vevo</h3>
+        </div>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox"><i class="fas fa-bars"></i></label>
+    </div>
+
+    <div class="player">
+        <div class="player_artist" id="player_artist"></div>
+        <div class="player_control">
+            <div class="player_control_buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <input type="range" id="progressBar" value="0" min="0" step="1">
+                <a id="pauseBtn" href="#" style="display: none;"><i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+            </div>
+            <div class="player_control_progress">
+                <div class="player_control_progress_2"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="main_content">
+        <h1 id="day"></h1>
+        <div class="main_cards">
+            <div class="card">
+                <p style="color: rgb(83, 83, 83)">歌单已更新</p>
+                <h3>C-Pop 潮</h3>
+                <h4 style="color: rgb(82, 80, 80)">Music C-Pop</h4>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/36/48/7d/36487d33-237d-6980-aec3-3f3ea2ebd871/6e3648d2-3ce4-457e-95ae-6d96ba488028.png/1060x608sr.webp"
+                    alt="" width="400" height="225">
+            </div>
+            <div class="card">
+                <p style="color: rgb(83, 83, 83)">歌单已更新</p>
+                <h3>A-List: 国语流行</h3>
+                <h4 style="color: rgb(82, 80, 80)">Apple Music 国语流行</h4>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/88/5b/76/885b76e6-e887-0d9b-7377-47977c516803/f1cefc78-8b75-4ad6-9c85-afcfe35e00f8.png/1060x608sr.webp"
+                    alt="" width="400" height="225">
+            </div>
+        </div>
+        <h3 style=" border-top: 1px rgb(60,60,60) solid;">精选音乐</h3>
+        <div class="main_cards_musics">
+            <div class="card_music" id="card"
+                data-image="https://p2.music.126.net/Tm6YII2VnHkO1eTYNv7YVw==/109951167772565044.jpg?param=130y130"
+                data-artist="After D..." data-song="CH TDL Music"
+                data-file="https://m801.music.126.net/20250214094859/1da11dd39b44547dbbbb1d3010012711/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/17146186713/8ded/aaa1/d6aa/963a057689ed343ab25cc7e39f49b23c.mp3?vuutv=FBHaJQmsZ2JkspnY0z91wlC1EZnGOrdRo+BmNcpKPGNED08Rbr24KH9PMLb18Mq06FdaG0OQqJm4YziRTjxY93e0t350/L7Vtx6AE4xf1Sk=">
+                <img src="https://p2.music.126.net/Tm6YII2VnHkO1eTYNv7YVw==/109951167772565044.jpg?param=130y130" alt=""
+                    width="180" height="180">
+                <p>After Dark X Sweater<br>Weather(Award Nominee)</p>
+                <p class="autor">CH TDL Music</p>
+            </div>
+            <div class="card_music" id="card"
+                data-image="https://p1.music.126.net/s5zHH4IGZRjZA5bOExLSJg==/109951170410017575.jpg?param=130y130"
+                data-artist="TE AMO" data-song="黄丽玲"
+                data-file="https://m701.music.126.net/20250214095400/b80df0fc3f983b50337ac489eae6a7c5/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/57783852231/79d1/be0b/88bd/79c6590f19acae1b661440500796ca5c.mp3?vuutv=VKLTzqzOQlyWtRzGj/Ji2rtZmWxwevJWYb3lL3zbegY1kRzkDM2INf3yhrtYRhuYjYvkSxpWGet22jNK+87ftJXZqFVoE749oqs6KomWy3s=">
+                <img src="https://p1.music.126.net/s5zHH4IGZRjZA5bOExLSJg==/109951170410017575.jpg?param=130y130" alt=""
+                    width="180" height="180">
+                <p>TE AMO</p>
+                <p class="autor">黄丽玲</p>
+            </div>
+            <div class="card_music" id="card"
+                data-image="https://p3.music.126.net/_uGJMrEPuz6lkRFlINRvHw==/109951165968150661.jpg?param=320y320"
+                data-artist="Sweater..." data-song="The Neigh..."
+                data-file="https://m8.music.126.net/20250214095540/eb17176ca7dbaf0863126ca086b6123f/ymusic/8412/5bf9/e606/bc80014f5d28e9275282310e0c9e1e6b.mp3?vuutv=JZ+H6Woq9qKenRq9ONdpfjtZYGa20+CvdbsRKOx0qrUFABL5h7BVZ/mrkG0YFmWRTyjlpQionyMj65FswESNY9oiaY/FYykJX3yjSPpE/uY=">
+                <img src="https://p3.music.126.net/_uGJMrEPuz6lkRFlINRvHw==/109951165968150661.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>Sweater Weather</p>
+                <p class="autor">The Neighbourhood</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p1.music.126.net/Fz_JyKiqyZilA03Islvveg==/109951165881109275.jpg?param=130y130"
+                data-artist="I Hate You..." data-song="Tubes de l'amour"
+                data-file="https://m801.music.126.net/20250214095858/0d648a2db8eb093e667d3157da460233/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/4344330331/321c/ffb9/074c/d3c7811040714fc7837c4c7d96376014.mp3?vuutv=kvsiIVdnVB2TOjqln7J7xgkkj5f508JwgwU/E7/38AikpOBNj2IHgrSBAHBe6G2n71BVY29fbnlfW0s3L0tgzIKYgbxLDrAazbn1AE63LgY=">
+                <img src="https://p1.music.126.net/Fz_JyKiqyZilA03Islvveg==/109951165881109275.jpg?param=130y130" alt=""
+                    width="180" height="180">
+                <p>I Hate You, I Love You</p>
+                <p class="autor">Tubes de l'amour</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p3.music.126.net/InUa3jmQ6BFjfyVv-HETlA==/109951163829600640.jpg?param=320y320"
+                data-artist="Old Friend" data-song="Elderbrook"
+                data-file="https://m701.music.126.net/20250214100627/a05c2ec01f0c0d949ab5c658fea64cce/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/17198275540/5845/0eff/9ee8/0a8cd26926fa0668e066577a97d0f16b.mp3?vuutv=irQoI+UUdTPYdPvW7gMIuqq2edGYicab9wCzaqZdO7H853tpGAWtCmISpBqCJbglMSKX7QRcHLhX2AvjbZMqR/MiNTTgmi7K1LFP3QCdDH4=">
+                <img src="https://p3.music.126.net/InUa3jmQ6BFjfyVv-HETlA==/109951163829600640.jpg?param=320y320g"
+                    alt="" width="180" height="180">
+                <p>Old Friend</p>
+                <p class="autor">Elderbrook</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p1.music.126.net/l3G4LigZnOxFE9lB4bz_LQ==/109951165791860501.jpg?param=130y130"
+                data-artist="OneLastKiss" data-song="宇多田ヒカル"
+                data-file="https://m701.music.126.net/20250214102157/08a50cf1ffd5aeea722ae71157ff8fd2/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/22259859799/4392/7719/060f/2da361b2921a8df1ec1822c40ef34406.mp3?vuutv=Kg6Su17WGzudc5oDiYNE5z/MsXMl2H20sMgxKd76Zes9c2tPUkWe1AyjByCLnejbSAj1OtbqiBF3CDStzq3VZ0ybHkU1NNq6mcy5JskrufY=">
+                <img src="https://p1.music.126.net/l3G4LigZnOxFE9lB4bz_LQ==/109951165791860501.jpg?param=130y130" alt=""
+                    width="180" height="180">
+                <p>One Last Kiss</p>
+                <p class="autor">宇多田ヒカル</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p3.music.126.net/nRuQt_bbbiQ70CxwXUHXOQ==/109951163597044887.jpg?param=320y320"
+                data-artist="CallofSilence" data-song="澤野弘之/R!N.."
+                data-file="https://m801.music.126.net/20250214102603/8dd70a63a04b61da8b39b811ea9f55f5/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481781150/fc43/451a/f58e/51bcbfd32e7f52825c9b8f9a7ae37b13.mp3?vuutv=mUAcsRxdBAcGji+KQH1O/CGMv0ST+vg9YTcUWMUi9ikvb1MGRYdmLZwD8Q+ATD/k4Yt2bz8cUC94JRt7T6qz1M+gwynIEy6eQv79oFq4PZE=">
+                <img src="https://p3.music.126.net/nRuQt_bbbiQ70CxwXUHXOQ==/109951163597044887.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>Call of Silence</p>
+                <p class="autor">澤野弘之/R!N/Gemie</p>
+            </div>
+
+
+            <!-- ##########################EMO################################################## -->
+            <div class="card_music"
+                data-image="https://p3.music.126.net/wUog39IHoJb76pL0AVCFNQ==/109951165348116023.jpg?param=320y320"
+                data-artist="他只是经过" data-song="h3R3/高旭"
+                data-file="https://m801.music.126.net/20250214103339/51210c2f1752bcbee9e97704b4efa4f8/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096450835/e37f/1f00/b2c4/63201e9ec81b95cc7762a7c0e3f5dac1.mp3?vuutv=/85cDE+HjSz4CC+Yn9NpZ4lwWdENRK8WvG2tIDco/rKfVrddf5DgltyeMzsZVPE23xthk94CirAhcmvLiiVnPqV4Lm1GIab5qNYQV4Hiv6Q=">
+                <img src="https://p3.music.126.net/wUog39IHoJb76pL0AVCFNQ==/109951165348116023.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>他只是经过</p>
+                <p class="autor">h3R3/高旭</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p3.music.126.net/9FhSEQtMhP-JP3_U84YfWQ==/109951165798773745.jpg?param=320y320"
+                data-artist="还是会想你" data-song="林达浪/h3R3"
+                data-file="https://m801.music.126.net/20250214103639/b198327c8fe09933d33b0dc85cce413b/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096416209/b79a/d1b3/3491/22cf5ca1b4a21659c20ade20c1ada608.mp3?vuutv=dwZaseO48tfN+Dz8EHFf/T3nVwOyIRbwA0t5mi0oHN9TMTxNOjOxJUhXUo87Z60lLcgkbPkp6pRbYG7VkX8EA3RLpZSED4/1l7n0y/tY3Lc=">
+                <img src="https://p3.music.126.net/9FhSEQtMhP-JP3_U84YfWQ==/109951165798773745.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>还是会想你</p>
+                <p class="autor">林达浪/h3R3</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p3.music.126.net/4BCskpY6Rmm-QReHnY8W6Q==/109951166071009318.jpg?param=320y320"
+                data-artist="忘不掉的你" data-song="h3R3"
+                data-file="https://m801.music.126.net/20250214103849/2a3926d5d3a3a4ad07440d9f5a078b56/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096412136/2215/d4c8/1d4b/1b76d409a8afc46f4b2c86969f4af8b2.mp3?vuutv=f5OfaYhxw1mWrw3L951lUs7zKUIlR6mWDEAZ/jZXtQLbNrHZrC39ij61SA+SkfaWl4MOjxodHcaUSflhzt9Yv+IEnN96wTXeVlxtc0fnFyo=">
+                <img src="https://p3.music.126.net/4BCskpY6Rmm-QReHnY8W6Q==/109951166071009318.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>忘不掉的你</p>
+                <p class="autor">h3R3</p>
+            </div>
+            <div class="card_music"
+                data-image="https://p3.music.126.net/tuWLl2YkJfe6EOvdnpg9rw==/109951169398455370.jpg?param=320y320"
+                data-artist="先说谎的人" data-song="h3R3/张鑫"
+                data-file="https://m801.music.126.net/20250214102957/370a3cb7a7d77d73b2c1ae3da29b5488/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/16637151563/ac93/7c9c/213c/d25f883018673e8fc32128d04efa8ba1.mp3?vuutv=jrj9958O+HIO2886+wOQKiGrLD+zJdmqWtgkfKHfEl+ufHyDCvXUDm6CWh2as+bNU1dpZ6dkE/EpkKFwNQBMva4KXsbLzCYWcHjzXH7+w+0=">
+                <img src="https://p3.music.126.net/tuWLl2YkJfe6EOvdnpg9rw==/109951169398455370.jpg?param=320y320" alt=""
+                    width="180" height="180">
+                <p>先说谎的人</p>
+                <p class="autor">h3R3/张鑫</p>
+            </div>
+
+        </div>
+    </section>
+
+    <audio id="audioPlayer" controls="" style="position: absolute; top: 0; left: 0; z-index: -999; opacity: 0;">
+    </audio>
+    <script src="js/app.js"></script>
+    <script src="js/tocarMusic.js"></script>
+</body>
+
+</html>
